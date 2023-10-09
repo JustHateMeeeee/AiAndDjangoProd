@@ -1,0 +1,601 @@
+/*
+
+Globak edot
+
+scren desktop
+{
+      Head
+      main
+      footer
+}
+scren mobile
+
+{
+      Head
+      main
+      footer   
+}
+*/
+
+/* Глобальные изменения Global edot ---------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+* {
+      font-family: 'Mooli', sans-serif;
+}
+
+html {
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      height: 100%;
+}
+
+body {
+      margin: 0;
+}
+body {
+      margin: 0;
+}
+
+/* main {
+      display: block;
+} */
+
+p {
+      margin: 0px;
+      padding: 0px;
+      color: #dadae4;
+}
+
+h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+}
+h2{
+      color: #dadae4;
+      font-size: 30px;
+      mix-blend-mode: screen;
+}
+hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+}
+
+pre {
+      font-family: monospace, monospace;
+      font-size: 1em;
+}
+
+a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #dadae4;
+}
+
+abbr {
+      border-bottom: none;
+      text-decoration: underline;
+      text-decoration: underline dotted;
+}
+
+b,
+strong {
+      font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+}
+
+small {
+      font-size: 80%;
+}
+
+sub,
+sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+}
+
+sub {
+      bottom: -0.25em;
+      /* Нижний индекс */
+}
+
+sup {
+      top: -0.5em;
+      /* Вверхний регистр */
+}
+
+img {
+      border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+}
+
+button,
+input {
+      overflow: visible;
+}
+
+button,
+select {
+      text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+      outline: 1px dotted ButtonText;
+}
+
+fieldset {
+      padding: 0.35em 0.75em 0.625em;
+      /* -----------------------------------------------------Гля гупировки элементов формы---------------------------------- */
+}
+
+legend {
+      box-sizing: border-box;
+      color: inherit;
+      display: table;
+      max-width: 100%;
+      padding: 0;
+      white-space: normal;
+      /* -----------------------------------------------------Гля гупировки элементов формы---------------------------------- */
+}
+
+progress {
+      vertical-align: baseline;
+      /* Прогресс бар  */
+}
+
+textarea {}
+
+[type="checkbox"],
+[type="radio"] {
+      box-sizing: border-box;
+      padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+      height: auto;
+}
+
+[type="search"] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit;
+}
+
+details {
+      display: block;
+}
+
+summary {
+      display: list-item;
+}
+
+template {
+      display: none;
+}
+
+[hidden] {
+      display: none;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/* scren desctop */
+@media only screen and (min-width: 768px) {
+
+      .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+      }
+
+      p {
+            margin: 0px;
+            padding: 0px;
+            color: #dadae4;
+            
+      }
+
+      p[sist="top_men_bot"] {
+            font-size: 24px;
+      }
+
+      body {
+            height: 100%;
+      }
+
+      main {
+            background: linear-gradient(45deg, rgb(11,83,113) 0%, rgb(94,74,100) 25%, rgb(133,64,86) 50%, rgb(163,51,68) 75%, rgb(188,35,44) 100%);
+            height: auto;
+            flex: 1 1 auto;
+            /* height: ; */
+      }
+
+
+
+      /* Шапка ёбана-------------------------------- */
+      header {
+            margin: 0px;
+            padding: 0px;
+            user-select: none;
+            z-index: 9999;
+            height: 150px;
+            resize: none;
+            background: url("/webApp/cardFile/templates/cardFile/contents/headder.jpg") 0px, 0px, no-repeat;
+            background-size: 100% 100%;
+      }
+      nav{
+            position: sticky;
+            top: 0px;
+            user-select: none;
+            z-index: 9999;
+      }
+      .header_img{
+            width: 100vw;
+            height: 100%;
+            height: 10vh;
+      }
+      .hat {
+            height: 100%;
+      }
+
+      .Top_hat {
+            background-color: #19191b;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+      }
+
+      .Top_hat_menu {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-width: 50%;
+            min-width: min-content;
+            width: 100%;
+            margin: 0px 20px 0px 20px;
+            justify-content: space-around;
+      }
+
+
+      .hvh {
+            height: 80%;
+            margin-left: 2vw;
+      }
+
+      .hvh_ikon {
+            height: 79px;
+            width: 78px;
+      }
+
+      .button_nav {
+            background-color: #046176;
+            border: 2px inset #5e939c;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 2vh;
+            margin: 5px;
+            cursor: pointer;
+      }
+      .button_nav:hover {
+            background-color: #087a94;
+            border: 2px inset #5e939c;
+            ;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 2vh;
+            margin: 5px;
+      }
+
+      .button_nav:active {
+            background-color: #ef810a;
+            border: 2px inset rgb(35, 121, 197, );
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-size: 2vh;
+            margin: 5px;
+      }
+
+
+
+      /* Центр ---------------------------------------- */
+      .contend{
+            /* display: flex;
+            justify-content: center; */
+            margin: 20px;
+            height: 100%;
+      }
+      .main_conteiner{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+      }
+      .main_conteiner_info{
+            background-color: blueviolet;
+            width: 100%;
+            height: 100%;
+      }
+      .referens_PK1{
+            pointer-events: none;
+            user-select: none;
+      }
+      .main_conteiner_obgects{
+            width: 95%;
+            background-color: rgba(133, 8, 211, 0.703);
+            backdrop-filter: blur(3px);
+            padding: 20px;
+            margin: 25px;
+            box-sizing: border-box;
+            border-radius: 10px;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, auto));
+            max-width: 100%;
+            column-gap: 10px;
+            row-gap: 30px;
+            justify-items: center;
+            justify-content: space-evenly;
+      }
+      .object_tov{
+            display: flex;
+            flex-direction: column;
+            /* min-height: 460px; */
+            max-height: 600px;
+            height: fit-content;
+            width: 400px;
+            background-color: #a54ada;
+            /* margin: 20px; */
+            border-radius: 20px;
+            align-items: center;
+      }
+      [refer="anime"] {
+            max-height: 360px;
+            max-width: 350px;
+            filter: drop-shadow(0 0 10px #a78317);
+            filter: blur(px);
+      }
+      .art{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+      }
+      .description_tov_top{
+            
+            padding-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 80%;
+            height: fit-content;
+            padding-left: 15%;
+            box-sizing: content-box;
+            font-size: 25px;
+            margin: 5px;
+      }
+      .description_tov_down{
+            padding-top: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 80%;
+            height: fit-content;
+            padding-left: 9%;
+            box-sizing: content-box;
+            font-size: 18px;
+            margin: 0px 5px 15px 5px;
+            padding-top: 0px;
+            word-wrap: break-word;
+            overflow: hidden;
+      }
+      /* Подвал --------------------------------------- */
+      footer {}
+      
+      .foot_elimenst_top {
+            display: flex;
+            background-color: #272729;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .footer_elimenst_mid {
+            display: flex;
+            background-color: #19191b;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+      }
+
+      .compani_info {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 70%;
+            margin: 10px;
+            min-width: 60%;
+            margin-right: 30px;
+            max-height: 80%;
+            gap: 1%;
+            font-size: 20px;
+      }
+
+      .fot_log {
+            margin: 30px;
+      }
+      .footer_icon{
+            height: 45px;
+      }
+      .foot_elis_top_text{
+            font-size: 20px;
+            margin-right: 10%;
+      }
+      /* Типо адаптив типо для мабилок */
+      /* @media (max-width:550px) {
+        body{
+
+        };
+    } */
+
+      .button_nav_1 {
+            margin: 5px;
+      }
+}
+
+
+
+
+/* scren mobil */
+@media only screen and (max-width: 767px) {
+      a {
+            margin: 0px;
+            padding: 0px;
+            color: #dadae4;
+            font-size: 28px;
+      }
+
+      .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+
+      }
+
+      body {
+            height: 100%;
+      }
+
+      main {
+            height: auto;
+            flex: 1 1 auto;
+      }
+
+      /* Шапка ёбана------------------------------------------- */
+      header {
+            height: 10vh;
+            width: 100%;
+            position: fixed;
+      }
+
+      .hat {
+            height: 100%;
+      }
+
+      .Top_hat {
+            background-color: #19191b;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: space-between;
+      }
+
+      .Top_hat_menu {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-width: 50%;
+            width: 100%;
+            margin: 0px 20px 0px 20px;
+            justify-content: space-around;
+      }
+
+      .hvh {
+            height: 80%;
+            margin-left: 2vw;
+      }
+
+      .hvh_ikon {
+            height: 100%;
+
+      }
+
+      .button_nav {
+            font-size: 2vh;
+      }
+
+      /* Подвал --------------------------------------- */
+
+      footer {}
+
+      .fot_eliments {
+            display: flex;
+            background-color: #19191b;
+            height: 100%;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+      }
+
+      .compani_info {
+            display: flex;
+            width: 70%;
+            min-width: 60%;
+            margin-right: 30px;
+            max-height: 80%;
+            justify-content: flex-end;
+      }
+
+      .fot_log {
+            margin: 30px;
+      }
+
+      /* Типо адаптив типо для мабилок */
+      /* @media (max-width:550px) {
+        body{
+
+        };
+    } */
+
+      .button_nav_1 {
+            margin: 5px;
+      }
+}
